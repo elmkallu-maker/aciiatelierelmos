@@ -45,7 +45,7 @@ Files:
 
 Live version (Netlify):
 
-> https://YOUR-NETLIFY-URL-HERE
+> https://ascii-atelier.netlify.app/
 
 ---
 

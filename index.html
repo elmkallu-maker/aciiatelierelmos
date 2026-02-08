@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>ELMO'S ATELIER – ASCII LAB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⬛ ELMO'S ATELIER – ASCII LAB ⬛</h1>
+            <p class="subtitle">Text → Toxic Green ASCII. No bullshit.</p>
+        </header>
+
+        <main class="main">
+            <section class="input-panel">
+                <label for="inputText">INPUT TEXT</label>
+                <textarea id="inputText" rows="6" placeholder="Type your text here..."></textarea>
+
+                <label for="styleSelect">STYLE</label>
+                               <select id="styleSelect">
+                    <option value="terminal">> TERMINAL HEIST</option>
+                    <option value="frame"># FRAMED MESSAGE</option>
+                    <option value="glitch">* GLITCH BLOCK</option>
+                </select>
+
+                <label class="inline">
+                    <input type="checkbox" id="timestampCheckbox">
+                    ADD TIMESTAMP (TERMINAL STYLE)
+                </label>
+
+                <button id="generateBtn">GENERATE ASCII</button>
+
+                <div class="email-box">
+                    <p>🟩 Want more styles later?</p>
+                    <input type="email" id="emailInput" placeholder="Email (optional)">
+                    <button id="saveEmailBtn">Save email locally</button>
+                    <p class="small-note">Stored only in your browser (localStorage).</p>
+                </div>
+            </section>
+
+            <section class="output-panel">
+                <label>OUTPUT ASCII</label>
+                <pre id="outputAscii" class="ascii-box"></pre>
+
+                <div class="actions">
+                    <button id="copyBtn">COPY TO CLIPBOARD</button>
+                    <button id="downloadBtn">DOWNLOAD .TXT</button>
+                    <button id="clearBtn">CLEAR</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
